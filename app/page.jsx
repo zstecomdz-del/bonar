@@ -33,6 +33,13 @@ export default function Home() {
 
   return (
     <main className="main-container">
+      {/* Header */}
+      <header className="site-header">
+        <div className="header-brand">
+          <span className="brand-text">STORE ZH</span>
+        </div>
+      </header>
+
       {/* Hero Section - Mobile First */}
       <section className="hero">
         <div className="hero-glow"></div>
