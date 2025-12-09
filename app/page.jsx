@@ -1,7 +1,7 @@
 'use client'
 
 export default function Home() {
-  const whatsappNumber = "213000000000" // Replace with Bonar's WhatsApp number
+  const whatsappNumber = "33745947222" // Bonar's WhatsApp number
   const whatsappMessage = encodeURIComponent("Bonjour! Je suis intéressé par l'abonnement IPTV. Pouvez-vous me donner plus d'informations?")
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
 
