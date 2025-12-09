@@ -112,43 +112,55 @@ export default function Home() {
 
         <div className="features-grid">
           <div className="feature-card">
-            <div className="feature-header">
+            <div className="feature-image">
+              <img src="/tv1.jpg" alt="Smart TV Streaming" />
+            </div>
+            <div className="feature-content">
               <span className="feature-tag">Chaînes</span>
               <h3 className="feature-title">Chaînes Françaises</h3>
+              <p className="feature-desc">
+                Toutes les chaînes françaises populaires : TF1, France 2, M6, Canal+, et bien plus.
+              </p>
             </div>
-            <p className="feature-desc">
-              Toutes les chaînes françaises populaires : TF1, France 2, M6, Canal+, et bien plus. Divertissement, actualités, documentaires.
-            </p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-header">
+            <div className="feature-image">
+              <img src="/cinema1.jpg" alt="Cinema" />
+            </div>
+            <div className="feature-content">
               <span className="feature-tag">Chaînes</span>
               <h3 className="feature-title">Chaînes Arabes</h3>
+              <p className="feature-desc">
+                Accès complet aux chaînes arabes du monde entier. MBC, Rotana, Al Jazeera.
+              </p>
             </div>
-            <p className="feature-desc">
-              Accès complet aux chaînes arabes du monde entier. MBC, Rotana, Al Jazeera, et toutes vos chaînes préférées.
-            </p>
           </div>
 
           <div className="feature-card featured">
-            <div className="feature-header">
+            <div className="feature-image">
+              <img src="/football3.jpg" alt="Football Stadium" />
+            </div>
+            <div className="feature-content">
               <span className="feature-tag">Sport</span>
               <h3 className="feature-title">Sports en Direct</h3>
+              <p className="feature-desc">
+                beIN Sports, Canal+ Sport, DAZN. Football, basketball, tennis - ne manquez jamais un match.
+              </p>
             </div>
-            <p className="feature-desc">
-              beIN Sports, Canal+ Sport, DAZN, ZDF Sport. Football, basketball, tennis, MMA - ne manquez jamais un match.
-            </p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-header">
+            <div className="feature-image">
+              <img src="/movies1.jpg" alt="Movies Popcorn" />
+            </div>
+            <div className="feature-content">
               <span className="feature-tag">VOD</span>
               <h3 className="feature-title">Films & Séries</h3>
+              <p className="feature-desc">
+                100K+ films et séries en français, anglais et arabe. Nouveautés ajoutées régulièrement.
+              </p>
             </div>
-            <p className="feature-desc">
-              Catalogue massif de films et séries en français, anglais et arabe. Nouveautés ajoutées régulièrement.
-            </p>
           </div>
         </div>
       </section>
@@ -161,9 +173,22 @@ export default function Home() {
         <p className="section-subtitle">Nous proposons plusieurs applications IPTV premium selon vos préférences</p>
 
         <div className="platforms-grid">
-          {['ESP TV', 'KING 4K', 'LYNX', 'STRONG 4K', 'IRON TV PRO', 'FAMILY 4K', 'ATLAS PRO', 'MAX OTT'].map((platform) => (
-            <div key={platform} className="platform-card">
-              <span className="platform-name">{platform}</span>
+          {[
+            { name: '4Matic 4K', img: '/4matic.jpg' },
+            { name: 'King 4K', img: '/king4k.jpg' },
+            { name: 'LYNX', img: '/lynx.jpg' },
+            { name: 'IRON PRO', img: '/ironpro.jpg' },
+            { name: 'Wolf IPTV', img: '/wolf.jpg' },
+            { name: 'Eagle IPTV', img: '/eagle.jpg' },
+            { name: 'DLTA 4K', img: '/dlta4k.jpg' },
+            { name: 'Pure IPTV', img: '/pure.jpg' },
+            { name: 'Crystal', img: '/crystal.jpg' },
+            { name: 'MEGA OTT', img: '/megaott.jpg' },
+            { name: 'Jupiter', img: '/jupiter.jpg' },
+            { name: 'BluTV', img: '/blutv.jpg' },
+          ].map((platform) => (
+            <div key={platform.name} className="platform-card">
+              <img src={platform.img} alt={platform.name} className="platform-img" />
             </div>
           ))}
         </div>
