@@ -303,9 +303,9 @@ export default function Home() {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <div className="footer-brand">BONAR IPTV</div>
+          <div className="footer-brand">STORE ZH</div>
           <p className="footer-tagline">Votre divertissement, simplifié</p>
-          <div className="footer-copy">© 2025 Bonar IPTV. Tous droits réservés.</div>
+          <div className="footer-copy">© 2025 Store ZH. Tous droits réservés.</div>
         </div>
       </footer>
 
